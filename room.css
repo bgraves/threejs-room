@@ -1,0 +1,76 @@
+body {
+  margin: 0px;
+  background-color: #fffa00;
+  overflow: hidden;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+button {
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0px -20px 10px -20px rgba(0,0,0,0.75), 2px 3px 20px 0px rgba(0,0,0,0.75);
+}
+button.active {
+  -webkit-box-shadow: inset 0px 5px 20px -5px rgba(0,0,0,0.75), 2px 3px 20px 0px rgba(0,0,0,0.75) 
+}
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hidden {
+  opacity: 0;
+}
+nav {
+  position: absolute;
+  text-align: center;
+}
+nav ul {
+  list-style-type: none;
+}
+nav li {
+  line-height: 36px;  
+}
+#controllers {
+  height: 312px;
+  width: 425px;
+}
+.controller {
+  position: relative;
+  height: 312px;
+  width: 425px;
+}
+#hobo-controller {
+  background: url('controllers/hobo-unactive.png');
+}
+#hobo-button-1 {
+  height: 174px;
+  left: 5px;
+  position: absolute;
+  top: 69px;
+  width: 174px;
+}
+#hobo-button-2 {
+  height: 174px;
+  left: 203px;
+  position: absolute;
+  top: 69px;
+  width: 174px;
+}
+#hobo-controller .button.active {
+  background: url('controllers/hobo-active-1.png');
+}
+#x {
+  background: url('controllers/x.png');
+  height: 41px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 41px;
+}

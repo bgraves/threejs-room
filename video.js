@@ -66,10 +66,12 @@ var chromaKey = function() {
     var b = camData.data[i + 2];
     var a = camData.data[i + 3];
     // compare rgb levels for green and set alphachannel to 0;
-    selectedR = 130;
-    selectedG = 130; 
-    selectedB = 130;
-    if (r >= selectedR && b >= selectedB && g >= selectedG) {
+    selectedR = 20;
+    selectedG = 80; 
+    selectedB = 50;
+    if ((r >= selectedR && r <= selectedR + 50) &&
+        (g >= selectedG && g <= selectedG + 175) &&
+        (b >= selectedB && b <= selectedB + 120)) { 
       imgData.data[i + 0] = 0;//bgData.data[i + 0];
       imgData.data[i + 1] = 0;//bgData.data[i + 1];
       imgData.data[i + 2] = 0;//bgData.data[i + 2];

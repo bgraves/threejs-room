@@ -132,6 +132,25 @@ function init() {
   cube.position.set( 0, y, 0 );
   scene.add( cube );
 
+  /*
+  var ambient = new THREE.AmbientLight( 0x999999 );
+  scene.add( ambient );
+
+  var directionalLight = new THREE.DirectionalLight( 0xffeedd );
+  directionalLight.position.set( 0, 0, 1 ).normalize();
+  scene.add( directionalLight );
+  */
+
+  /*
+  THREE.Loader.Handlers.add( /\.dds$/i, new THREE.DDSLoader() );
+  THREE.Loader.Handlers.add( /\.tga$/i, new THREE.TGALoader() );
+  var loader = new THREE.OBJMTLLoader();
+
+  loader.load( 'grass/Grass_02.obj', 'grass/Grass_02.mtl', function (object) {
+    scene.add( object );
+  });
+  */
+
   //var edges = new THREE.WireframeHelper(cube, 0x000000);
   //edges.material.linewidth = 3;
   //scene.add(edges)
@@ -155,7 +174,7 @@ function animate() {
   requestAnimationFrame( animate );
   checkStates();
   //cube.rotation.x += 0.005;
-  cube.rotation.y += 0.01;
+  cube.rotation.y += 0.001;
   renderer.render( scene, camera );
   controls.update();
 }
@@ -177,6 +196,7 @@ function checkStates() {
   }
 
   // Handle 3 rise cases up, down, back to normal - JBG
+/*
   if(rise % 3 == 1 && camera.position.y < height/2) {
     camera.position.y += 1;
   } else if(rise % 3 == 2 && camera.position.y > -height/2+y) {
@@ -184,8 +204,10 @@ function checkStates() {
   } else if(rise % 3 == 0 && camera.position.y != y) {
     camera.position.y += camera.position.y > y ? -1 : 1;
   } 
+*/
 
   // Adjust camera if we are leaving the room - JBG
+/*
   if(camera.position.y > cube.position.y + height / 2) {
     camera.position.y = cube.position.y + height / 2;
   } else if(camera.position.y < cube.position.y - height / 2) {
@@ -197,6 +219,7 @@ function checkStates() {
   } else if(camera.position.x < cube.position.x - width / 2) {
     camera.position.x = cube.position.x - width / 2;
   }
+*/
 
   var rot = cube.rotation;
   scene.remove(cube);
@@ -210,6 +233,7 @@ function checkStates() {
 //console.log(intersects);
   
   scene.add(cube);
+
   cube.rotation.x = rot.x;
   cube.rotation.y = rot.y;
   cube.rotation.z = rot.z;
