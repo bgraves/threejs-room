@@ -138,6 +138,35 @@ nav li {
 #hobo-controller .button.active {
   background: url('controllers/hobo-active-1.png');
 }
+/* Convenience Controller */
+#convenience-controller {
+  background: url('controllers/convenience-unactive.png');
+}
+#convenience-button-1 {
+  height: 97px;
+  left: 124px;
+  position: absolute;
+  top: 106px;
+  width: 46px;
+}
+#convenience-button-2 {
+  height: 97px;
+  left: 190px;
+  position: absolute;
+  top: 106px;
+  width: 46px;
+}
+#convenience-button-3 {
+  height: 97px;
+  left: 258px;
+  position: absolute;
+  top: 106px;
+  width: 46px;
+}
+#convenience-controller .button.active {
+  background: url('controllers/convenience-active-1-3.png') no-repeat;
+}
+/* Close button */
 #x {
   background: url('controllers/x.png');
   height: 41px;

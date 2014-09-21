@@ -13,11 +13,17 @@ var showController = function(name) {
 
   // Controller buttons - JBG
   $('.button').each(function() {
-    $(this).mousedown(function() {
-      $(this).addClass('active');      
-    }).mouseup(function() {
-      $(this).removeClass('active');
-    });
+    if($(this).hasClass('sticky')) {
+      $(this).mousedown(function() {
+        $(this).toggleClass('active');
+      });
+    } else {
+      $(this).mousedown(function() {
+        $(this).addClass('active');      
+      }).mouseup(function() {
+        $(this).removeClass('active');
+      });
+    }
   });
 };
 
