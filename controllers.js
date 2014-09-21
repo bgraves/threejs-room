@@ -1,7 +1,14 @@
+var showController = function(controllerId) {
+  $('#controllers .controller').addClass('hidden');
+  $('#' + controllerId + '-controller').removeClass('hidden');
+  $('#controllers').removeClass('hidden');
+}
+
 $(function() {
   // Menu buttons - JBG
   $('button').click(function() {
     $('button').removeClass('active');
+    showController($(this).attr('id'));
     $(this).addClass('active');
   });
 
