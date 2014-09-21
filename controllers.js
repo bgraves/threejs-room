@@ -1,16 +1,15 @@
-var showController = function(controllerId) {
-  $('#controllers .controller').addClass('hidden');
-  $('#' + controllerId + '-controller').removeClass('hidden');
-  $('#controllers').removeClass('hidden');
-}
-
-$(function() {
-  // Menu buttons - JBG
-  $('button').click(function() {
-    $('button').removeClass('active');
-    showController($(this).attr('id'));
-    $(this).addClass('active');
+var controllers = {};
+var init = function() {
+  $('.controller').each(function() {
+    controllers[$(this).attr('id')] = this;
+    $(this).remove();
   });
+};
+
+var showController = function(name) {
+  $('#controllers .controller').remove();
+  $('#x').before(controllers[name + '-controller']);
+  $('#controllers').removeClass('hidden');
 
   // Controller buttons - JBG
   $('.button').each(function() {
@@ -19,6 +18,18 @@ $(function() {
     }).mouseup(function() {
       $(this).removeClass('active');
     });
+  });
+};
+
+$(function() {
+  // Init - JBG
+  init();
+
+  // Menu buttons - JBG
+  $('button').click(function() {
+    $('button').removeClass('active');
+    showController($(this).attr('id'));
+    $(this).addClass('active');
   });
 
   // Close button - JBG

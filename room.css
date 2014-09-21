@@ -42,23 +42,95 @@ nav li {
   width: 425px;
 }
 .controller {
-  position: relative;
+  position: absolute;
+  left: 0px;
+  top: 0px;
   height: 312px;
   width: 425px;
 }
+/* Communal Controller - JBG */
+#communal-controller {
+  background: url('controllers/communal-unactive.png');
+}
+#communal-button-1 {
+  height: 34px;
+  left: 179px;
+  position: absolute;
+  top: 51px;
+  width: 34px;
+}
+#communal-button-5 {
+  height: 34px;
+  left: 229px;
+  position: absolute;
+  top: 113px;
+  width: 34px;
+}
+#communal-button-6 {
+  height: 34px;
+  left: 93px;
+  position: absolute;
+  top: 154px;
+  width: 34px;
+}
+#communal-button-1.active, #communal-button-5.active, #communal-button-6.active {
+  background: url('controllers/communal-active-1-5-6.png') no-repeat;
+}
+#communal-button-2 {
+  height: 22px;
+  left: 256px;
+  position: absolute;
+  top: 79px;
+  width: 22px;
+}
+#communal-button-3 {
+  height: 22px;
+  left: 280px;
+  position: absolute;
+  top: 166px;
+  width: 34px;
+}
+#communal-button-4 {
+  height: 22px;
+  left: 177px;
+  position: absolute;
+  top: 132px;
+  width: 22px;
+}
+#communal-button-8 {
+  height: 22px;
+  left: 119px;
+  position: absolute;
+  top: 94px;
+  width: 22px;
+}
+#communal-button-2.active, #communal-button-3.active, #communal-button-4.active, #communal-button-8.active {
+  background: url('controllers/communal-active-2-3-4-8.png') no-repeat;
+}
+#communal-button-7 {
+  height: 67px;
+  left: 162px;
+  position: absolute;
+  top: 186px;
+  width: 66px;
+}
+#communal-button-7.active {
+  background: url('controllers/communal-active-7.png') no-repeat;
+}
+/* Hobo Controller - JBG */
 #hobo-controller {
   background: url('controllers/hobo-unactive.png');
 }
 #hobo-button-1 {
   height: 174px;
-  left: 5px;
+  left: 28px;
   position: absolute;
   top: 69px;
   width: 174px;
 }
 #hobo-button-2 {
   height: 174px;
-  left: 203px;
+  left: 226px;
   position: absolute;
   top: 69px;
   width: 174px;
