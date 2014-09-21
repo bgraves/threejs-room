@@ -143,24 +143,24 @@ nav li {
   background: url('controllers/convenience-unactive.png');
 }
 #convenience-button-1 {
-  height: 97px;
+  height: 101px;
   left: 124px;
   position: absolute;
-  top: 106px;
+  top: 102px;
   width: 46px;
 }
 #convenience-button-2 {
-  height: 97px;
+  height: 101px;
   left: 190px;
   position: absolute;
-  top: 106px;
+  top: 102px;
   width: 46px;
 }
 #convenience-button-3 {
-  height: 97px;
+  height: 101px;
   left: 258px;
   position: absolute;
-  top: 106px;
+  top: 102px;
   width: 46px;
 }
 #convenience-controller .button.active {
@@ -193,6 +193,173 @@ nav li {
 }
 #hermit-controller .button.active {
   background: url('controllers/hermit-active-1-2.png') no-repeat;
+}
+/* Bolo Controller */
+#bolo-controller {
+  background: url('controllers/bolo-unactive.png');
+}
+#bolo-button-1 {
+  height: 85px;
+  left: 107px;
+  position: absolute;
+  top: 54px;
+  width: 87px;
+}
+#bolo-button-1.active {
+  background: url('controllers/bolo-active-1.png') no-repeat;
+}
+#bolo-button-2 {
+  height: 88px;
+  left: 226px;
+  position: absolute;
+  top: 54px;
+  width: 86px;
+}
+#bolo-button-2.active {
+  background: url('controllers/bolo-active-2.png') no-repeat;
+}
+#bolo-button-3 {
+  height: 90px;
+  left: 105px;
+  position: absolute;
+  top: 171px;
+  width: 88px;
+}
+#bolo-button-3.active {
+  background: url('controllers/bolo-active-3.png') no-repeat;
+}
+#bolo-button-4 {
+  height: 90px;
+  left: 225px;
+  position: absolute;
+  top: 171px;
+  width: 89px;
+}
+#bolo-button-4.active {
+  background: url('controllers/bolo-active-4.png') no-repeat;
+}
+/* Out of Control Controller */
+#outofcontrol-controller {
+  background: url('controllers/outofcontrol-unactive.png');
+}
+#outofcontrol-button-1 {
+  height: 37px;
+  left: 117px;
+  position: absolute;
+  top: 58px;
+  width: 38px;
+}
+#outofcontrol-button-8 {
+  height: 37px;
+  left: 261px;
+  position: absolute;
+  top: 225px;
+  width: 38px;
+}
+#outofcontrol-button-10 {
+  height: 37px;
+  left: 117px;
+  position: absolute;
+  top: 225px;
+  width: 38px;
+}
+#outofcontrol-button-1.active, #outofcontrol-button-8.active, #outofcontrol-button-10.active {
+  background: url('controllers/outofcontrol-active-1-8-10.png') no-repeat;
+}
+#outofcontrol-button-2 {
+  height: 46px;
+  left: 259px;
+  position: absolute;
+  top: 58px;
+  width: 46px;
+}
+#outofcontrol-button-2.active {
+  background: url('controllers/outofcontrol-active-2.png') no-repeat;
+}
+#outofcontrol-button-3 {
+  height: 46px;
+  left: 99px;
+  position: absolute;
+  top: 127px;
+  width: 45px;
+}
+#outofcontrol-button-3.active {
+  background: url('controllers/outofcontrol-active-3.png') no-repeat;
+}
+#outofcontrol-button-4 {
+  height: 86px;
+  left: 167px;
+  position: absolute;
+  top: 119px;
+  width: 86px;
+}
+#outofcontrol-button-4.active {
+  background: url('controllers/outofcontrol-active-4.png') no-repeat;
+}
+#outofcontrol-button-5 {
+  height: 62px;
+  left: 258px;
+  position: absolute;
+  top: 116px;
+  width: 63px;
+}
+#outofcontrol-button-5.active {
+  background: url('controllers/outofcontrol-active-5.png') no-repeat;
+}
+#outofcontrol-button-6 {
+  height: 38px;
+  left: 318px;
+  position: absolute;
+  top: 190px;
+  width: 38px;
+}
+#outofcontrol-button-11 {
+  height: 38px;
+  left: 61px;
+  position: absolute;
+  top: 189px;
+  width: 38px;
+}
+#outofcontrol-button-6.active, #outofcontrol-button-11.active {
+  background: url('controllers/outofcontrol-active-6-11.png') no-repeat;
+}
+#outofcontrol-button-7 {
+  height: 29px;
+  left: 260px;
+  position: absolute;
+  top: 184px;
+  width: 30px;
+}
+#outofcontrol-button-9 {
+  height: 29px;
+  left: 131px;
+  position: absolute;
+  top: 184px;
+  width: 30px;
+}
+#outofcontrol-button-7.active, #outofcontrol-button-9.active {
+  background: url('controllers/outofcontrol-active-7-9.png') no-repeat;
+}
+/* Safety Controller */
+#safety-controller {
+  background: url('controllers/safety-unactive.png');
+}
+#safety-button-1 {
+  height: 36px;
+  left: 119px;
+  position: absolute;
+  top: 131px;
+  width: 84px;
+}
+#safety-button-2 {
+  height: 36px;
+  left: 230px;
+  position: absolute;
+  top: 131px;
+  width: 84px;
+}
+#safety-button-1.active, #safety-button-2.active {
+  background: url('controllers/safety-active-1-2.png') no-repeat;
 }
 /* Close button */
 #x {
