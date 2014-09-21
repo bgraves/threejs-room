@@ -166,6 +166,34 @@ nav li {
 #convenience-controller .button.active {
   background: url('controllers/convenience-active-1-3.png') no-repeat;
 }
+/* Hermit Controller */
+#hermit-controller {
+  background: url('controllers/hermit-unactive.png');
+}
+#hermit-button-1 {
+  height: 48px;
+  left: 110px;
+  position: absolute;
+  top: 128px;
+  width: 48px;
+}
+#hermit-button-2 {
+  height: 48px;
+  left: 181px;
+  position: absolute;
+  top: 128px;
+  width: 48px;
+}
+#hermit-button-3 {
+  height: 48px;
+  left: 251px;
+  position: absolute;
+  top: 128px;
+  width: 48px;
+}
+#hermit-controller .button.active {
+  background: url('controllers/hermit-active-1-2.png') no-repeat;
+}
 /* Close button */
 #x {
   background: url('controllers/x.png');
